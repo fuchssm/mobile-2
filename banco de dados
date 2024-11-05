@@ -1,0 +1,49 @@
+            CREATE DATABASE eletronicos;
+
+            CREATE TABLE cadastro_produto(
+            id_produto                int primary key not null auto_incremente,
+            categoria_aparelho        varchar(20) not null,
+            versao_modelo             varchar(20),
+            historico_aparelho        varchar(20) 
+            indentificacao_produto    varchar(30) not null,
+            data_entrada_saida        varchar(15) not null,
+            hora_entrada_saida venda  varchar(15) not null,
+            tempo_garantia            varchar(20) not null,
+            peca_implantada           varchar(20) not null);
+
+
+            CREATE TABLE descricao_aparelho(
+            descrição_aparelho       varchar(40),       
+            tem_trincados            varchar(10),
+            tem_quebrados            varchar(10),
+            tem_adesivo              varchar(10),
+            tem_fita                 varchar(10),
+            qual_cor                 varchar(10),
+            cod_produto              varchar(30),
+            ativo);
+
+            CREATE TABLE problemas_repetitivo(
+            aparelhos_disponiveis
+            ativo);
+
+            CREATE TABLE venda(
+            id_venda          int primary key not null auto_incremente,
+            data_venda        varchar(15) not null,
+            hora_venda        varchar(15) not null,
+            id_vendendor      varchar(15) not null,
+            valor_total       varchar(10) not null,
+            preco_pago        varchar(15) not null,
+            forma_pagamento   varchar(15) not null,
+            ativo);
+
+            CREATE TABLE(
+            cadastro_cliente  varchar(30) not null,
+            id_cliente        varchar(20) not null,
+            nome_cliente      varchar(30) not null,
+            endereco_cliente  varchar(15),
+            cpf_cliente       varchar(15) not null,
+            telefone_1        varchar(15) 
+            telefone_2        varchar(15)
+            email_cliente     varchar(15) 
+            ativo);
+
